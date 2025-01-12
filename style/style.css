@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    margin: 20px;
+    padding: 20px;
+    line-height: 1.6;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+     border: 1px solid #ccc;
+    padding: 15px;
+
+}
+ .section{
+    direction: center;
+ }
+ .header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+ }
+ .type-p1{
+    text-align: left;
+ }
+ .header div {
+     text-align: center;
+ }
+ .form-line{
+    text-align: center;
+ }
+ 
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form-section {
+    margin-bottom: 20px;
+    text-align: right;
+}
+.form-line {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: flex-end;
+}
+.form-line label {
+     margin-left: 5px;
+    white-space: nowrap;
+}
+
+.form-line span{
+    border-bottom: 1px dashed #ccc;
+    min-width: 100px;
+    display: inline-block;
+    margin-left: 5px;
+    padding-bottom: 3px;
+ }
+ .form-line-full{
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 10px;
+ }
+ .form-line-full span {
+    border-bottom: 1px dashed #ccc;
+    display: block;
+    flex-grow: 1;
+    padding-bottom: 3px;
+    margin-left: 5px;
+ }
+.signature {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+ }
+ .signature div {
+    text-align: center;
+    flex: 1;
+ }
+.signature div p{
+    border-bottom: 1px dashed #ccc;
+    min-height: 20px;
+    margin-bottom: 5px;
+}
+.requirements {
+     margin-top: 20px;
+    text-align: right;
+    border-top: 1px dashed #ccc;
+    padding-top: 10px;
+}
+.requirements ul{
+     padding-right: 20px;
+}
+.requirements ul li {
+     list-style: none;
+     margin-bottom: 5px;
+}
+ .requirements ul li::before {
+    content: "✓";
+    color: green;
+    margin-left: 5px;
+}
+.print-header {
+     display: none;
+ }
+ @media print {
+   body {
+       margin: 0;
+      padding: 0;
+   }
+  .container {
+      border: 1px solid black;
+        padding: 10px;
+   }
+     .print-header {
+       display: block;
+        text-align: right;
+        margin-bottom: 15px;
+   }
+    .header{
+       display: none;
+   }
+ }
